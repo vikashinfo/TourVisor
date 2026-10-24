@@ -1,0 +1,159 @@
+.blog-section {
+  background: #fffdfa;
+  padding: 65px 20px 100px;
+  color: #34466d;
+  font-family: Arial, sans-serif;
+}
+
+.blog-heading {
+  max-width: 650px;
+  margin: 0 auto 64px;
+}
+
+.blog-subtitle {
+  display: block;
+  color: #d995a7;
+  font-family: cursive;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.blog-heading h2 {
+  font-size: clamp(27px, 3vw, 40px);
+  font-weight: 750;
+  margin-bottom: 18px;
+  color: #34466d;
+}
+
+.blog-heading p {
+  color: #a4aec3;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.featured-image {
+  height: 395px;
+  object-fit: cover;
+  border-radius: 9px;
+  transition: transform 0.4s ease;
+}
+
+.featured-image:hover,
+.recent-image:hover {
+  transform: scale(1.025);
+}
+
+.blog-meta {
+  color: #929db3;
+  font-size: 15px;
+  margin: 7px 0 15px;
+}
+
+.featured-title {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3c4f76;
+  margin-bottom: 20px;
+}
+
+.featured-description {
+  color: #a3aec2;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 48px;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  color: #929db3;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.read-more span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.read-more:hover {
+  color: #d995a7;
+}
+
+.recent-blog-list {
+  row-gap: 26px !important;
+}
+
+.recent-image {
+  height: 185px;
+  object-fit: cover;
+  border-radius: 9px;
+  transition: transform 0.4s ease;
+}
+
+.recent-title {
+  color: #3c4f76;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.55;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .blog-section {
+    padding: 50px 16px 65px;
+  }
+
+  .blog-heading {
+    margin-bottom: 40px;
+  }
+
+  .featured-image {
+    height: 320px;
+  }
+
+  .featured-description {
+    margin-bottom: 25px;
+  }
+
+  .recent-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 40px 12px 50px;
+  }
+
+  .blog-heading p {
+    font-size: 15px;
+  }
+
+  .featured-image {
+    height: 280px;
+  }
+
+  .featured-title,
+  .recent-title {
+    font-size: 21px;
+  }
+
+  .recent-image {
+    height: 220px;
+  }
+
+  .blog-meta {
+    font-size: 13px;
+    gap: 12px !important;
+  }
+
+  .recent-blog-list {
+    row-gap: 35px !important;
+  }
+}

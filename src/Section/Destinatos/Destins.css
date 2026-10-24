@@ -1,0 +1,81 @@
+.destination-section {
+  overflow: hidden;
+}
+.place-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.place-card img {
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.place-card:hover img {
+  transform: scale(1.12);
+}
+
+.place-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: end;
+  padding: 22px;
+  color: white;
+  background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.place-content {
+  transform: translateY(65px);
+  transition: transform 0.5s ease;
+}
+
+.place-card:hover .place-content {
+  transform: translateY(0);
+}
+
+.place-content h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.place-content p {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.4s ease;
+}
+
+.place-card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ***********section card 2******* */
+.image-container {
+  position: relative;
+}
+
+.hover-zoom {
+  transition: transform 0.4s ease;
+  width: 100%;
+  height: auto;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .place-content {
+    transform: translateY(0);
+  }
+
+  .place-content p,
+  .discover-btn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
